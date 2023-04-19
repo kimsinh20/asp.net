@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "DanhSachSinhVien";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DanhSachSinhVien</h2>
+<table class="table" border="1" cellspacing="2" cellpadding="4">
+    <tr>
+        <td>ma sinh vien</td>
+        <td>ten sinh vien</td>
+        <td>diem trung binh</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.masv</td>
+            <td>@item.tensv</td>
+            <td>@item.diemtb</td>
+        </tr>
+    }
+</table>
+

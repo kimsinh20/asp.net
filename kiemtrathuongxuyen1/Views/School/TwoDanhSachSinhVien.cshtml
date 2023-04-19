@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "TwoDanhSachSinhVien";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Danh Sach Sinh Vien 1</h2>
+<table class="table" border="1" cellspacing="2" cellpadding="4">
+    <tr>
+        <td>ma sinh vien</td>
+        <td>ten sinh vien</td>
+        <td>diem trung binh</td>
+    </tr>
+    @foreach (var item in ViewBag.sinhviens1)
+    {
+        <tr>
+            <td>@item.masv</td>
+            <td>@item.tensv</td>
+            <td>@item.diemtb</td>
+        </tr>
+    }
+</table>
+<h2>Danh Sach Sinh Vien 1</h2>
+<table class="table" border="1" cellspacing="2" cellpadding="4">
+    <tr>
+        <td>ma sinh vien</td>
+        <td>ten sinh vien</td>
+        <td>diem trung binh</td>
+    </tr>
+    @foreach (var item in ViewBag.sinhviens2)
+    {
+        <tr>
+            <td>@item.masv</td>
+            <td>@item.tensv</td>
+            <td>@item.diemtb</td>
+        </tr>
+    }
+</table>
+

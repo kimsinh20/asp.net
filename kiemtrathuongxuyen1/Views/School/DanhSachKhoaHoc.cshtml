@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "DanhSachKhoaHoc";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DanhSachKhoaHoc</h2>
+<p>ma khoa hoc : @Model.KhoaHoc.makhoahoc</p>
+<p>ten khoa hoc : @Model.KhoaHoc.tenkhoahoc</p>
+<table class="table" border="1" cellspacing="2" cellpadding="4">
+    <tr>
+        <td>ma sinh vien</td>
+        <td>ten sinh vien</td>
+        <td>diem trung binh</td>
+    </tr>
+    @foreach (var item in Model.sinhViens)
+    {
+        <tr>
+            <td>@item.masv</td>
+            <td>@item.tensv</td>
+            <td>@item.diemtb</td>
+        </tr>
+    }
+</table>
+
+

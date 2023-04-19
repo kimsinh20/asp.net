@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "KetQuaThem";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    kiemtrathuongxuyen1.Models.SinhVien sinhVien = Model;
+}
+
+<h2>KetQuaThem</h2>
+<table class="table" border="1" cellspacing="2" cellpadding="4">
+    <tr>
+        <td>ma sinh vien</td>
+        <td>@sinhVien.masv</td>
+    </tr>
+    <tr>
+        <td>ten sinh vien</td>
+        <td>@sinhVien.tensv</td>
+    </tr> 
+    <tr>
+        <td>diem trung binh</td>
+        <td>@sinhVien.diemtb</td>
+    </tr>
+</table>
+
