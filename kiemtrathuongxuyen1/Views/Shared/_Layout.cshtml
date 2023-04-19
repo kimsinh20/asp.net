@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <section >
+        <div class="container">
+            <div class="row bg-primary">
+                <div class="col">
+                    <h1 class="h1 text-center text-white fs-1">Wecome to website</h1>
+                </div>
+            </div>
+            <div class="row" style="border-top:1px solid white;">
+                <div class="col bg-primary">
+                   <ul class="d-flex flex-row justify-content-end mb-0">
+                       <li class="list-unstyled ms-5 px-3" style="border-left:1px solid white;"><a class="text-decoration-none text-white fs-3" href="#">home</a></li>
+                       <li class="list-unstyled ms-5 px-3" style="border-left:1px solid white;"><a class="text-decoration-none text-white fs-3" href="#">home</a></li>
+                       <li class="list-unstyled ms-5 px-3" style="border-left:1px solid white;"><a class="text-decoration-none text-white fs-3" href="#">home</a></li>
+                       <li class="list-unstyled ms-5 px-3" style="border-left:1px solid white;"><a class="text-decoration-none text-white fs-3" href="#">home</a></li>
+                   </ul>
+                </div>
+            </div>    
+            <div class="row bg-light" >
+                <div class="col-9">
+                    @RenderBody()
+                </div>   
+                <div class="col-3 pt-3">
+                    <ul class="d-flex flex-column justify-content-center">
+                        <li class="list-unstyled my-1" ><a class="text-decoration-none text-black" href="#">home</a></li>
+                        <li class="list-unstyled my-1" ><a class="text-decoration-none text-black" href="#">home</a></li>
+                        <li class="list-unstyled my-1"><a class="text-decoration-none text-black" href="#">home</a></li>
+                        <li class="list-unstyled my-1"><a class="text-decoration-none text-black" href="#">home</a></li>
+                    </ul>
+                </div>
+            </div>
+            <footer class=" row bg-info px-2">
+                <div class="col">
+                    <p class="text-center">&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+                </div>
+            </footer>
+        </div>
+    </section>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
